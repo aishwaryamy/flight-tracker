@@ -18,8 +18,12 @@ import numpy as np
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 from xgboost import XGBRegressor
-import mlflow
-import mlflow.xgboost
+try:
+    import mlflow
+    import mlflow.xgboost
+    MLFLOW_AVAILABLE = True
+except Exception:
+    MLFLOW_AVAILABLE = False
 
 logger = logging.getLogger(__name__)
 
