@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     port: 5173,
     host: '0.0.0.0',
-    allowedHosts: ['all', 'bubbly-heart-production-e984.up.railway.app'],
+    allowedHosts: 'all',
     proxy: {
       '/api': {
         target: process.env.VITE_API_URL || 'http://backend:8000',
