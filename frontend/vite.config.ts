@@ -5,8 +5,8 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 5173,
-    host: true,
-    allowedHosts: 'all',
+    host: '0.0.0.0',
+    allowedHosts: ['all', 'bubbly-heart-production-e984.up.railway.app'],
     proxy: {
       '/api': {
         target: process.env.VITE_API_URL || 'http://backend:8000',
