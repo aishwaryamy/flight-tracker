@@ -1,3 +1,5 @@
+**Live demo:** https://flight-track-production-e984.up.railway.app
+
 # ✈ Flight Price Tracker
 
 A full-stack ML-powered flight price tracker. Monitors prices via the Amadeus API, flags deals using XGBoost + anomaly detection, and proactively suggests tracking routes based on your search behavior.
